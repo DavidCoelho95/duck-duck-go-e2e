@@ -2,7 +2,7 @@ describe('Realizar uma busca no DuckDuckGo', () => {
   //Variável criada para armazenar o termo a ser buscado
   const buscaTermo = 'Bitcoin'
 
-  //obter data atual do teste
+  //obter data atual do teste (criado para usar no screenshot)
   let dataAtual;
 
   beforeEach(() => {
