@@ -1,0 +1,19 @@
+{
+  "name": "cypress-prova-qa-mova",
+  "version": "1.0.0",
+  "description": "Realizar busca no DuckDuckGo",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "cypressio",
+    "cypress",
+    "testing"
+  ],
+  "author": "David Coelho",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^10.7.0"
+  }
+}
