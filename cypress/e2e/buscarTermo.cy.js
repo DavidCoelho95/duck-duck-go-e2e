@@ -2,7 +2,13 @@ describe('Realizar uma busca no DuckDuckGo', () => {
   //Variável criada para armazenar o termo a ser buscado
   const buscaTermo = 'Bitcoin'
 
+  //obter data atual do teste
+  let dataAtual;
+
   beforeEach(() => {
+      //chamar o metodo para obter a data atual 
+    cy.obterDataAtual().then((valor) => (dataAtual = valor));
+
     //Intercept na url com o termo buscado para validar o result depois
     cy.intercept(
       'GET',
@@ -26,7 +32,7 @@ describe('Realizar uma busca no DuckDuckGo', () => {
        //Metódo para validar o resultado da página
     cy.assertTenResultsPage()
            //Print do teste
-    cy.screenshot('BuscaComEnter')
+    cy.screenshot(`01_TelaBuscaComEnter_${dataAtual}`)
   })
    //Teste 02 - Buscando o termo utilizando a lupa de busca
   it('digitando o termo "Bitcoin" e o clique na lupa para buscar', () => {
@@ -42,7 +48,7 @@ describe('Realizar uma busca no DuckDuckGo', () => {
        //Metódo para validar o resultado da página
     cy.assertTenResultsPage()
            //Print do teste
-    cy.screenshot('BuscaClicaLupa')
+    cy.screenshot(`02_TelaBuscaComLupa_${dataAtual}`)
 
   })
 
