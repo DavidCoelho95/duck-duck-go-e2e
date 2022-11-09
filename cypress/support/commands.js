@@ -5,7 +5,7 @@ Cypress.Commands.add('assertTenResultsPage', () => {
 })
 
 
-//OBTER DATA ATUAL (DATA INICIO DO TESTE OU DATA DE SAÍDA DO ESTACIONAMENTO)
+//Obter data atual
 Cypress.Commands.add("obterDataAtual", () => {
   var data = new Date();
   var ano = data.getFullYear()
