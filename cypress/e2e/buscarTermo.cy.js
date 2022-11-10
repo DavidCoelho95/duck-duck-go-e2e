@@ -51,5 +51,6 @@ describe('Realizar uma busca no DuckDuckGo', () => {
     cy.screenshot(`02_TelaBuscaComLupa_${dataAtual}`)
 
   })
+  //Autor: David Coelho
 
 })

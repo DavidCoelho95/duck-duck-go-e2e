@@ -1,5 +1,5 @@
 {
-  "name": "cypress-prova-qa-mova",
+  "name": "cypress-e2e",
   "version": "1.0.0",
   "description": "Realizar busca no DuckDuckGo",
   "scripts": {
@@ -11,7 +11,7 @@
     "cypress",
     "testing"
   ],
-  "author": "David Coelho",
+  "author": "David Coelho <davicoelho95@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "cypress": "^10.7.0"

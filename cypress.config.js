@@ -6,6 +6,8 @@ module.exports = {
 // Adicionei para rodar em urls cros
   chromeWebSecurity: false
 
+  //Autor: David Coelho
+
 }
 
 

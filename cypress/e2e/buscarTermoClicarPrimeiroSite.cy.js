@@ -27,5 +27,6 @@ describe('Realizar uma busca no DuckDuckGo sobre Bitcoin', () => {
 
     cy.screenshot('primeiroSite')
   })
+  //Autor: David Coelho
 
 })
